@@ -6,12 +6,12 @@ public class SettingManager : MonoBehaviour
 {
     public GameObject settings;
     public GameObject MainMenu;
-    
-/*    public void LoadMenu()
+
+    public void Startgame()
     {
-        settings.SetActive(false);
-        MainMenu.SetActive(true);
-    }*/
+        SceneManager.LoadScene("Gameplay");
+    }
+
     public void LoadSettings()
     {
         MainMenu.SetActive(false);
@@ -21,8 +21,5 @@ public class SettingManager : MonoBehaviour
     {
         Application.Quit();
     }
-    public void Startgame()
-    {
-        SceneManager.LoadScene("Gameplay");
-    }
+  
 }
